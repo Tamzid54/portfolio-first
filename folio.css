@@ -1,0 +1,75 @@
+
+
+section#folio{
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+  text-align: center;
+}
+
+/* Center website */
+section#folio .main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+section#folio h2 {
+  font-size: 50px;
+  word-break: break-all;
+  color: #00c0f6;
+}
+
+section#folio .row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+section#folio .row,
+section#folio .row > section#folio .column {
+  padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+section#folio .column {
+  float: left;
+  width: 33.33%;
+  display: none; /* Hide columns by default */
+}
+
+/* Clear floats after rows */
+section#folio .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+section#folio .content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+section#folio .show {
+  display: block;
+}
+
+/* Style the buttons */
+section#folio .btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+/* Add a grey background color on mouse-over */
+section#folio .btn:hover {
+  background-color: #ddd;
+}
+
+/* Add a dark background color to the active button */
+section#folio .btn.active {
+  background-color: #00c0f6;
+   color: white;
+}
